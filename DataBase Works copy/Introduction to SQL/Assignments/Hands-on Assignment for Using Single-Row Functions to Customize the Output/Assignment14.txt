@@ -1,0 +1,17 @@
+
+Assignment 14 :- 
+
+Q. Rewrite the previous query using the CASE syntax.
+
+Answer :- 
+
+SELECT ENAME,
+       JOB,
+       CASE JOB
+            WHEN 'PRESIDENT' THEN 'A'
+            WHEN 'MANAGER' THEN 'B'
+            WHEN 'SALESMAN' THEN 'C'
+            WHEN 'CLERK' THEN 'D'
+            ELSE 'NA'
+       END AS GRADE
+FROM EMP;

@@ -1,0 +1,12 @@
+
+Assignment 8 :- 
+
+Q. Create a query to display the total number of employees and, of that total, the number of employees hired in 1980, 1981, and 1982. Create appropriate column headings.
+
+Answer :-
+
+SELECT COUNT(*) AS "Total Employees",
+       SUM(CASE WHEN TO_CHAR(HIREDATE,'YYYY') = '1980' THEN 1 ELSE 0 END) AS "Hired in 1980",
+       SUM(CASE WHEN TO_CHAR(HIREDATE,'YYYY') = '1981' THEN 1 ELSE 0 END) AS "Hired in 1981",
+       SUM(CASE WHEN TO_CHAR(HIREDATE,'YYYY') = '1982' THEN 1 ELSE 0 END) AS "Hired in 1982"
+FROM EMP;

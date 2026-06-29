@@ -1,0 +1,11 @@
+
+Assignment 7 :-
+
+Q. Display the ENAME and DEPTNO of all employees in departments 20 or 30 in ascending alphabetical order by ENAME.
+
+Answer :- 
+
+SELECT ENAME, DEPTNO
+FROM EMP
+WHERE DEPTNO IN (20, 30)
+ORDER BY ENAME ASC;

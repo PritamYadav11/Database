@@ -1,0 +1,9 @@
+Assignment 3
+
+Q.Display the Ename and Deptno from the EMP table whose Empno is 7788.
+
+Answer :-
+
+SELECT ENAME, DEPTNO
+FROM EMP
+WHERE EMPNO = 7788;

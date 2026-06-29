@@ -1,0 +1,37 @@
+Assignment 1
+
+Question :-
+Observe the structure of the given EMPLOYEE table and suggest if this table can be further normalized.
+
+Table:
+EMPLOYEE(EmpNo, EName, Sal, DeptNo, DName, Loc)
+
+Answer :-
+
+The given table is in Second Normal Form (2NF) but not in Third Normal Form (3NF).
+
+Reason :-
+
+* EmpNo → EName, Sal, DeptNo
+* DeptNo → DName, Loc
+
+Here, DName and Loc depend on DeptNo instead of EmpNo, creating a transitive dependency.
+
+Normalized Tables (3NF)
+
+EMPLOYEE :-
+
+| EmpNo       | EName | Sal | DeptNo      |
+| ----------- | ----- | --- | ----------- |
+| Primary Key |       |     | Foreign Key |
+
+DEPARTMENT :-
+
+| DeptNo      | DName | Loc |
+| ----------- | ----- | --- |
+| Primary Key |       |     |
+
+Conclusion:
+The table can be converted into 3NF by creating a separate DEPARTMENT table.
+
+

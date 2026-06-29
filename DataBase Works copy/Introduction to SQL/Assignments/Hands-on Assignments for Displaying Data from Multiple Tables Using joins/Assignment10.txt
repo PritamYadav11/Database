@@ -1,0 +1,15 @@
+
+Assignment 10 :-
+
+Q. Display the ENAME, SAL, MGR, and DNAME of employees whose salary is more than 2000. Use the ON clause.
+
+Answer :-
+
+SELECT E.ENAME,
+       E.SAL,
+       E.MGR,
+       D.DNAME
+FROM EMP E
+JOIN DEPT D
+ON E.DEPTNO = D.DEPTNO
+WHERE E.SAL > 2000;

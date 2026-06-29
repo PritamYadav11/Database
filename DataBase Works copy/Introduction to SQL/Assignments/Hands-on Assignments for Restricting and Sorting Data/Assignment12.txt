@@ -1,0 +1,14 @@
+
+Assignment 12:-
+
+Q. Create a query that prompts the user for Manager ID and generate EMPNO, ENAME, SAL, and DEPTNO. The user should have the ability to sort the records on a selected column.
+
+Answer :- 
+
+ACCEPT MID PROMPT 'Enter Manager ID: '
+ACCEPT COL PROMPT 'Enter Column Name to Sort By: '
+
+SELECT EMPNO, ENAME, SAL, DEPTNO
+FROM EMP
+WHERE MGR = &MID
+ORDER BY &COL;

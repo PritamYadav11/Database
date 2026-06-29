@@ -1,0 +1,11 @@
+
+Assignment 16:-
+
+Q. Display the Ename, Job, and Sal for all employees whose job is CLERK and whose salary is 800 or 950 or 1300.
+
+Answer :-
+
+SELECT ENAME, JOB, SAL
+FROM EMP
+WHERE JOB = 'CLERK'
+  AND SAL IN (800, 950, 1300);

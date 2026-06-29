@@ -1,0 +1,8 @@
+Assignment 4 :-
+
+Q. Display the last name concatenated with the job ID (separated by a comma and a space) and name the column Employee and Title.
+
+Answer :- 
+
+SELECT ENAME || ', ' || JOB AS "Employee and Title"
+FROM EMP;

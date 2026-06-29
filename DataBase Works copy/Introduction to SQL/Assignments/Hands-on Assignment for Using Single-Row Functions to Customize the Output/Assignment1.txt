@@ -1,0 +1,8 @@
+Assignment 1 :- 
+
+Q. Write a query to display the current date. Label the column Date.
+
+Answer :- 
+
+SELECT SYSDATE AS "Date"
+FROM DUAL;

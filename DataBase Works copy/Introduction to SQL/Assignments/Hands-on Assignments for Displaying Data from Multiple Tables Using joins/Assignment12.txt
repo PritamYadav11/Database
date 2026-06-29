@@ -1,0 +1,13 @@
+
+Assignment 12 :-
+
+Q. Display the ENAME and DNAME of employees. Use RIGHT OUTER JOIN.
+
+Answer :-
+
+SELECT E.ENAME,
+       D.DNAME
+FROM EMP E
+RIGHT OUTER JOIN DEPT D
+ON E.DEPTNO = D.DEPTNO;
+

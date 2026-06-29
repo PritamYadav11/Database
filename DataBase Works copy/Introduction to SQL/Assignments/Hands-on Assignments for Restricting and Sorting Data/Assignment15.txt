@@ -1,0 +1,11 @@
+
+Assignment 15:-
+
+Q. Display the last name of all employees who have both an 'A' and an 'S' in their ename.
+
+Answer :- 
+
+SELECT ENAME
+FROM EMP
+WHERE ENAME LIKE '%A%'
+  AND ENAME LIKE '%S%';

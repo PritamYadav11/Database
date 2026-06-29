@@ -1,0 +1,14 @@
+
+Assignment 8 :-
+
+Q. Modify the previous query to display the last name and salary of employees who earn between 2000 and 3000 and are in department 20 or 30. Label the columns Employee and Monthly Salary using column aliases.
+
+Answer :- 
+
+SELECT ENAME AS "Employee",
+       SAL AS "Monthly Salary"
+FROM EMP
+WHERE SAL BETWEEN 2000 AND 3000
+  AND DEPTNO IN (20, 30)
+ORDER BY ENAME ASC;
+

@@ -1,0 +1,14 @@
+
+Assignment 3 :- 
+
+Q. Modify the previous query to add a column alias that subtracts the old salary from the new salary. Label the column Increase.
+
+Answer :- 
+
+SELECT EMPNO,
+       ENAME,
+       SAL,
+       ROUND(SAL * 1.155) AS "New Salary",
+       ROUND(SAL * 1.155) - SAL AS "Increase"
+FROM EMP;
+

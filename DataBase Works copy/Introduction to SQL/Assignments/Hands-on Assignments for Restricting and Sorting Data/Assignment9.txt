@@ -1,0 +1,17 @@
+
+Assignment 9 :-
+
+Q. The HR department needs a report that displays the last name and hire date for all employees who were hired in 1981.
+
+Answer :-
+
+SELECT ENAME, HIREDATE
+FROM EMP
+WHERE TO_CHAR(HIREDATE, 'YYYY') = '1981';
+
+also correct:
+
+SELECT ENAME, HIREDATE
+FROM EMP
+WHERE HIREDATE BETWEEN TO_DATE('01-JAN-1981','DD-MON-YYYY')
+                  AND TO_DATE('31-DEC-1981','DD-MON-YYYY');

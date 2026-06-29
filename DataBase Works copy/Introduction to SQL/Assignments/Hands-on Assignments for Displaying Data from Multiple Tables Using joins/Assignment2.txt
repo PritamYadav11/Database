@@ -1,0 +1,11 @@
+
+Assignment 2 :-
+
+Q. The HR department needs a report of all employees. Write a query to display the JOB, MGR, SAL, COMM, and DNAME of employees whose JOB is SALESMAN.
+
+Answer :-
+
+SELECT E.JOB, E.MGR, E.SAL, E.COMM, D.DNAME
+FROM EMP E, DEPT D
+WHERE E.DEPTNO = D.DEPTNO
+  AND E.JOB = 'SALESMAN';

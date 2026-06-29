@@ -1,0 +1,15 @@
+
+Assignment 7 :- 
+
+Q. Create a report to display the manager number and the salary of the lowest-paid employee for that manager. Exclude anyone whose manager is not known. Exclude any groups where the minimum salary is $2000 or less. Sort the output in descending order of salary.
+
+Answer :- 
+
+SELECT MGR,
+       MIN(SAL) AS LOWEST_SALARY
+FROM EMP
+WHERE MGR IS NOT NULL
+GROUP BY MGR
+HAVING MIN(SAL) > 2000
+ORDER BY LOWEST_SALARY DESC;
+

@@ -1,0 +1,11 @@
+
+Assignment 6 :-
+
+Q. Create a report to display the ENAME, JOB, and HIREDATE for the employees whose name is SCOTT or TURNER. Order the result in ascending order of HIREDATE.
+
+Answer :-
+
+SELECT ENAME, JOB, HIREDATE
+FROM EMP
+WHERE ENAME IN ('SCOTT', 'TURNER')
+ORDER BY HIREDATE ASC;

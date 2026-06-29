@@ -1,0 +1,21 @@
+
+Assignment 3 :- 
+
+Q. Using Set Operator, display the JOB and DEPTNO of employees working in departments 20, 10, and 30 in that order.
+
+Answer :-
+SELECT JOB, DEPTNO
+FROM EMP
+WHERE DEPTNO = 20
+
+UNION ALL
+
+SELECT JOB, DEPTNO
+FROM EMP
+WHERE DEPTNO = 10
+
+UNION ALL
+
+SELECT JOB, DEPTNO
+FROM EMP
+WHERE DEPTNO = 30;

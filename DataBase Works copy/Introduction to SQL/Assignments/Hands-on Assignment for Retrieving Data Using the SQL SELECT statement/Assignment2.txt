@@ -1,0 +1,8 @@
+Assignment 2
+
+Q.Determine the structure of the EMP table and its contents.
+
+Answer :- 
+
+DESC EMP;
+SELECT * FROM EMP;

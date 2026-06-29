@@ -1,0 +1,11 @@
+Assignment 1 :-
+
+Q. Display the Ename, Sal, Comm from EMP table who earn commission and sort the records in descending order of Salary and Comm. Use column's numeric position in the ORDER BY clause.
+
+Answer :- 
+
+SELECT ENAME, SAL, COMM
+FROM EMP
+WHERE COMM IS NOT NULL
+ORDER BY 2 DESC, 3 DESC;
+

@@ -1,0 +1,14 @@
+
+Assignment 5 :- 
+
+Q. Rewrite the query so that the user is prompted to enter a letter that starts the last name.
+
+Answer :- 
+
+ACCEPT CH PROMPT 'Enter Starting Letter: '
+
+SELECT INITCAP(LOWER(ENAME)) AS "Employee",
+       LENGTH(ENAME) AS "Length"
+FROM EMP
+WHERE ENAME LIKE UPPER('&CH') || '%'
+ORDER BY ENAME;

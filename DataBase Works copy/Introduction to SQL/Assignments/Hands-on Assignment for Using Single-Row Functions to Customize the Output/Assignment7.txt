@@ -1,0 +1,10 @@
+
+Assignment 7 :- 
+
+Q. Create a report that produces the following for each employee: <ename> earns <salary> monthly but wants <3 times salary>. Label the column Dream Salaries.
+
+Answer :-
+
+SELECT ENAME || ' earns ' || SAL ||
+       ' monthly but wants ' || (SAL * 3) AS "Dream Salaries"
+FROM EMP;

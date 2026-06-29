@@ -1,0 +1,9 @@
+
+Assignment 5 :- 
+
+Q. Determine the number of managers without listing them. Label the column Number of Managers.
+
+Answer :- 
+
+SELECT COUNT(DISTINCT MGR) AS "Number of Managers"
+FROM EMP;

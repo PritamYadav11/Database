@@ -1,0 +1,13 @@
+
+Assignment 4 :-
+
+Q. Create a report to display employees' ENAME and employee number along with their manager's name and manager number. Label the columns Employee, Emp#, Manager, and Mgr#, respectively.
+
+Answer :-
+
+SELECT E.ENAME AS "Employee",
+       E.EMPNO AS "Emp#",
+       M.ENAME AS "Manager",
+       M.EMPNO AS "Mgr#"
+FROM EMP E, EMP M
+WHERE E.MGR = M.EMPNO;

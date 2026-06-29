@@ -1,0 +1,13 @@
+
+Assignment 13 :-
+
+Q. Display the EMPNO, DNAME, and LOC of employees. Use FULL OUTER JOIN.
+
+Answer :-
+
+SELECT E.EMPNO,
+       D.DNAME,
+       D.LOC
+FROM EMP E
+FULL OUTER JOIN DEPT D
+ON E.DEPTNO = D.DEPTNO;

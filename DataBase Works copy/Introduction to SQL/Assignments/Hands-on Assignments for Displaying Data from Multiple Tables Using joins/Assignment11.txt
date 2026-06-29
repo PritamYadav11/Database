@@ -1,0 +1,16 @@
+
+Assignment 11 :-
+
+Q. Display the EMPNO, ENAME, JOB, DEPTNO, DNAME, and LOC of employees. Use LEFT OUTER JOIN.
+
+Answer :-
+
+SELECT E.EMPNO,
+       E.ENAME,
+       E.JOB,
+       E.DEPTNO,
+       D.DNAME,
+       D.LOC
+FROM EMP E
+LEFT OUTER JOIN DEPT D
+ON E.DEPTNO = D.DEPTNO;

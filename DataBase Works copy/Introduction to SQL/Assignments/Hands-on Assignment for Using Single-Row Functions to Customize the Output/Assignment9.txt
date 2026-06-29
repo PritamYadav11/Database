@@ -1,0 +1,13 @@
+
+Assignment 9 :- 
+
+Q. Display each employee's last name, hire date, and salary review date, which is the first Monday after six months of service. Label the column REVIEW. Format the dates like "Monday, the Thirty-First of July, 2000".
+
+Answer :- 
+
+SELECT ENAME,
+       HIREDATE,
+       TO_CHAR(NEXT_DAY(ADD_MONTHS(HIREDATE, 6), 'MONDAY'),
+       'Day, "the" DDSP "of" Month, YYYY') AS REVIEW
+FROM EMP;
+

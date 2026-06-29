@@ -1,0 +1,15 @@
+
+Assignment 4 :- 
+
+Q. Write a query that displays the ename (with the first letter uppercase and all other letters lowercase) and the length of the ename for all employees whose name starts with J, A, or M. Give each column an appropriate label. Sort the results by employees' names.
+
+Answer :- 
+
+SELECT INITCAP(LOWER(ENAME)) AS "Employee",
+       LENGTH(ENAME) AS "Length"
+FROM EMP
+WHERE ENAME LIKE 'J%'
+   OR ENAME LIKE 'A%'
+   OR ENAME LIKE 'M%'
+ORDER BY ENAME;
+

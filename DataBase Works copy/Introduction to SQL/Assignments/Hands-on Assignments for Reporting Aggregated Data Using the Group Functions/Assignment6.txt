@@ -1,0 +1,9 @@
+
+Assignment 6 :- 
+
+Q. Find the difference between the highest and lowest salaries. Label the column DIFFERENCE.
+
+Answer :- 
+
+SELECT MAX(SAL) - MIN(SAL) AS DIFFERENCE
+FROM EMP;

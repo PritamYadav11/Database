@@ -1,0 +1,12 @@
+
+Assignment 3 :-
+Q. Display the column headings as Emp #, Employee, Job, and Hire Date by using column aliases.
+
+Answer :-
+
+SELECT EMPNO AS "Emp #",
+       ENAME AS "Employee",
+       JOB AS "Job",
+       HIREDATE AS "Hire Date"
+FROM EMP;
+

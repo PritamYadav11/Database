@@ -1,0 +1,8 @@
+Assignment 2 :-
+
+Q. Display all unique job codes from the EMP table.
+
+Answer :-
+
+SELECT DISTINCT JOB
+FROM EMP;

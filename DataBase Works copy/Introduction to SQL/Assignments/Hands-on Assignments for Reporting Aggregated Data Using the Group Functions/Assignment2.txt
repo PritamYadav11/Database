@@ -1,0 +1,12 @@
+
+Assignment 2 :- 
+
+Q. Display the Maximum, Minimum, Sum, and Average salary. Round the results to the nearest whole number.
+
+Answer :-
+
+SELECT ROUND(MAX(SAL)) AS "Maximum",
+       ROUND(MIN(SAL)) AS "Minimum",
+       ROUND(SUM(SAL)) AS "Sum",
+       ROUND(AVG(SAL)) AS "Average"
+FROM EMP;

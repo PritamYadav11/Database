@@ -1,0 +1,11 @@
+
+Assignment 7 :-
+
+Q. Display the ENAME and DNAME of all employees. Also display those department names which do not have any employees working.
+
+Answer :-
+
+SELECT E.ENAME, D.DNAME
+FROM EMP E
+RIGHT OUTER JOIN DEPT D
+ON E.DEPTNO = D.DEPTNO;

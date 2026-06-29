@@ -1,0 +1,76 @@
+Wipro TalentNext Expert
+Mini Project: Database Normalization
+
+Question 1: Convert the table into First Normal Form (1NF)
+
+
+1NF Table
+
+--------------------------------------------
+ Member_Id  First_Name  Last_Name  Hobby     
+--------------------------------------------
+ 101        Jayson      Mark       Cricket  
+ 101        Jayson      Mark       Swimming 
+ 101        Jayson      Mark       Football  
+ 102        Ram         Ganesh     Swimming  
+ 102        Ram         Ganesh     Running   
+ 102        Ram         Ganesh     Music     
+ 103        Raj         Kishore    Dancing   
+ 103        Raj         Kishore    Singing   
+ 103        Raj         Kishore    Running   
+---------------------------------------------
+
+Question 2: Convert the table into Second Normal Form (2NF)
+
+Employee_Training Table
+
+----------------------------------
+| Empno | Training    | Training_Date 
+-----------------------------------
+| 101   | Oracle SQL  | 12-Aug-2015   
+| 101   | Java        | 21-Aug-2015   
+| 102   | Oracle SQL  | 18-Sep-2014   
+----------------------------------
+
+Training_Department Table
+
+------------------
+ Training     Dept 
+------------------
+ Oracle SQL   TT   
+ Java         BU   
+------------------
+
+Question 3: Convert the table into Third Normal Form (3NF)
+
+
+Member Table
+
+---------------------------------------------
+ Member_Id | First_Name | Last_Name | Sports  
+---------------------------------------------
+ 101       | Rajesh     | Chand     | Cricket 
+ 102       | Jayesh     | Raj       | Hockey  
+ 103       | Mark       | Dorson    | Football
+-------------------------------------------
+
+Sports_Fees Table
+
+---------------
+ Sports   | Fees 
+---------------
+ Cricket  | 100  
+ Hockey   | 80   
+ Football | 90   
+---------------
+
+
+Conclusion
+
+In this mini project, I normalized the given tables up to Third Normal Form.
+
+• In 1NF, repeating values were removed by storing one hobby per row.
+• In 2NF, partial dependency was removed by separating department information.
+• In 3NF, transitive dependency was eliminated by creating a separate Sports_Fees table.
+
+After normalization, the database becomes more organized, reduces data redundancy, improves consistency, and makes future maintenance easier.

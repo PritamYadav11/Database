@@ -1,0 +1,10 @@
+
+Assignment 8 :- 
+
+Q. Display the last name and salary for all employees. Format the salary to be 15 characters long, left-padded with the $ symbol. Label the column SALARY.
+
+Answer :- 
+
+SELECT ENAME,
+       LPAD(SAL, 15, '$') AS SALARY
+FROM EMP;

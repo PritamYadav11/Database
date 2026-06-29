@@ -1,0 +1,12 @@
+
+Assignment 9 :-
+
+Q. Display the EMPNO, ENAME, DNAME, and LOC of those employees who are working as CLERK. Use the USING clause.
+
+Answer :-
+
+SELECT EMPNO, ENAME, DNAME, LOC
+FROM EMP
+JOIN DEPT
+USING (DEPTNO)
+WHERE JOB = 'CLERK';

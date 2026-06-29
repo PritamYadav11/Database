@@ -1,0 +1,13 @@
+
+Assignment 10 :- 
+
+Q. Display the last name, hire date, and day of the week on which the employee started. Label the column DAY. Order the results by the day of the week, starting with Monday.
+
+Answer :- 
+
+SELECT ENAME,
+       HIREDATE,
+       TO_CHAR(HIREDATE, 'Day') AS DAY
+FROM EMP
+ORDER BY TO_CHAR(HIREDATE, 'D');
+

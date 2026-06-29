@@ -1,0 +1,17 @@
+
+
+Assignment 13 :- 
+
+Q. Using the DECODE function, display the grade of all employees based on JOB using: PRESIDENT-A, MANAGER-B, SALESMAN-C, CLERK-D.
+
+Answer :- 
+
+SELECT ENAME,
+       JOB,
+       DECODE(JOB,
+              'PRESIDENT','A',
+              'MANAGER','B',
+              'SALESMAN','C',
+              'CLERK','D',
+              'NA') AS GRADE
+FROM EMP;

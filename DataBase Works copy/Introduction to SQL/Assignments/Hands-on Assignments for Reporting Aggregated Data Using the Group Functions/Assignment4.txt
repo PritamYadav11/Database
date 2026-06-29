@@ -1,0 +1,12 @@
+
+Assignment 4 :- 
+
+Q. Write a query to display the number of people with the same job.
+
+Answer :-
+
+SELECT JOB,
+       COUNT(*) AS "Number of Employees"
+FROM EMP
+GROUP BY JOB;
+

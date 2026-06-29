@@ -1,0 +1,10 @@
+
+Assignment 11:-
+
+Q. Create a report to display the last name and job title of all employees who do not have a manager.
+
+Answer :- 
+
+SELECT ENAME, JOB
+FROM EMP
+WHERE MGR IS NULL;

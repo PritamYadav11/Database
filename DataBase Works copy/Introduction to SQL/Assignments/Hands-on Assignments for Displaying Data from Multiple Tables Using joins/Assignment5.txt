@@ -1,0 +1,15 @@
+
+Assignment 5 :-
+
+Q. Modify the previous query to display all employees including KING, who has no manager. Order the results by the employee number.
+
+Answer :-
+
+SELECT E.ENAME AS "Employee",
+       E.EMPNO AS "Emp#",
+       M.ENAME AS "Manager",
+       M.EMPNO AS "Mgr#"
+FROM EMP E
+LEFT OUTER JOIN EMP M
+ON E.MGR = M.EMPNO
+ORDER BY E.EMPNO;

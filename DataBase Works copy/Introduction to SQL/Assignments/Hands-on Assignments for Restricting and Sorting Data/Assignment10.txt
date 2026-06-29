@@ -1,0 +1,12 @@
+
+Assignment 10:-
+
+Q. Display the Ename and Sal of employees who earn more than an amount the user specifies after a prompt.
+
+Answer :- 
+
+ACCEPT AMT PROMPT 'Enter Salary: '
+
+SELECT ENAME, SAL
+FROM EMP
+WHERE SAL > &AMT;

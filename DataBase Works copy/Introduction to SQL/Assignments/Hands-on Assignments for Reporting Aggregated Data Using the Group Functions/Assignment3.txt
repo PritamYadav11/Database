@@ -1,0 +1,15 @@
+
+Assignment 3 :- 
+
+Q. Modify the above query to display the minimum, maximum, sum, and average salary for each job type.
+
+Answer :-
+
+SELECT JOB,
+       ROUND(MIN(SAL)) AS "Minimum",
+       ROUND(MAX(SAL)) AS "Maximum",
+       ROUND(SUM(SAL)) AS "Sum",
+       ROUND(AVG(SAL)) AS "Average"
+FROM EMP
+GROUP BY JOB;
+

@@ -1,0 +1,8 @@
+Assignment 5 :-
+
+Q. To familiarize yourself with the data in the EMP table, create a query to display all the data from that table. Separate each column output by a comma. Display ENAME, JOB, HIREDATE, and MGR. Name the column title THE_OUTPUT.
+
+Answer:-
+
+SELECT ENAME || ',' || JOB || ',' || HIREDATE || ',' || MGR AS THE_OUTPUT
+FROM EMP;

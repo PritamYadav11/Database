@@ -1,0 +1,11 @@
+
+Assignment 11 :- 
+
+Q. Display the employees' last names and commission amounts. If an employee does not earn commission, display "No Commission". Label the column COMM.
+
+Answer :- 
+
+SELECT ENAME,
+       NVL(TO_CHAR(COMM), 'No Commission') AS COMM
+FROM EMP;
+

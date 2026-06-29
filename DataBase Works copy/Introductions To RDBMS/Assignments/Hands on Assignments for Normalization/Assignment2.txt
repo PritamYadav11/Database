@@ -1,0 +1,39 @@
+Assignment 2
+
+Question :-
+Observe the structure of the given STUDENT table and suggest if this table can be further normalized.
+
+Table:
+STUDENT(RollNo, Name, Age, Exam, Marks, Grade)
+
+Answer :-
+
+The given table is in Second Normal Form (2NF) but not in Third Normal Form (3NF).
+
+Reason:
+
+* RollNo → Name, Age
+* (RollNo, Exam) → Marks
+* Marks → Grade
+
+Since Grade depends on Marks rather than the primary key, a transitive dependency exists.
+
+Normalized Tables (3NF)
+
+STUDENT Table :-
+
+| RollNo | Name | Age |
+| ------ | ---- | --- |
+
+STUDENT_EXAM Table:-
+
+| RollNo | Exam | Marks |
+| ------ | ---- | ----- |
+
+GRADE Table :-
+
+| Marks | Grade |
+| ----- | ----- |
+
+Conclusion:
+The table can be converted into **3NF** by separating the Grade details.

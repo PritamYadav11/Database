@@ -1,0 +1,13 @@
+
+Assignment 12 :- 
+
+Q. Display the first eight characters of the employees' last names and indicate their salaries with asterisks. Each asterisk represents one thousand dollars. Sort by salary in descending order. Label the column EMPLOYEES_AND_THEIR_SALARIES.
+
+Answer :- 
+
+SELECT RPAD(SUBSTR(ENAME,1,8),
+            8,
+            ' ') || ' ' || RPAD('*', TRUNC(SAL/1000), '*')
+AS EMPLOYEES_AND_THEIR_SALARIES
+FROM EMP
+ORDER BY SAL DESC;

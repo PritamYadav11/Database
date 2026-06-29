@@ -1,0 +1,11 @@
+
+Assignment 14 :-
+
+Q. Display all employee last names in which the third letter of the name is 'A'.
+
+Answer :- 
+
+SELECT ENAME
+FROM EMP
+WHERE ENAME LIKE '__A%';
+

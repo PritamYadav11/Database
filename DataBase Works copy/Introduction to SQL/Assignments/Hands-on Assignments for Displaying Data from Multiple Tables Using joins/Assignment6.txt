@@ -1,0 +1,17 @@
+
+Assignment 6 :-
+
+Q. The HR department needs a report on job grades and salaries. First show the structure of the SALGRADE table. Then display the employee name, job, department name, salary, and grade for all employees.
+
+Answer :-
+
+DESC SALGRADE;
+
+SELECT E.ENAME,
+       E.JOB,
+       D.DNAME,
+       E.SAL,
+       S.GRADE
+FROM EMP E, DEPT D, SALGRADE S
+WHERE E.DEPTNO = D.DEPTNO
+  AND E.SAL BETWEEN S.LOSAL AND S.HISAL;

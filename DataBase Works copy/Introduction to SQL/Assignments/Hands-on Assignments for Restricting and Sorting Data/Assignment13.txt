@@ -1,0 +1,13 @@
+
+Assignment 13:-
+
+Q. The HR department wants to run reports based on a manager. Create a query that prompts the user for a MGR and generates the EMPNO, ENAME, SALARY, and DEPARTMENT for that manager's employees. The HR department wants the ability to sort the report on a selected column.
+
+Answer :- 
+ACCEPT MID PROMPT 'Enter Manager ID: '
+ACCEPT COL PROMPT 'Enter Column Name to Sort By: '
+
+SELECT EMPNO, ENAME, SAL, DEPTNO
+FROM EMP
+WHERE MGR = &MID
+ORDER BY &COL;

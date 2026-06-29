@@ -1,0 +1,25 @@
+
+Assignment 2 :- 
+
+Q. Using set operators, display the DEPTNO and SUM(SAL) for each department, JOB and SUM(SAL) for each job, and the Total Salary.
+
+Answer :- 
+
+SELECT TO_CHAR(DEPTNO) AS CATEGORY,
+       SUM(SAL) AS TOTAL_SALARY
+FROM EMP
+GROUP BY DEPTNO
+
+UNION
+
+SELECT JOB,
+       SUM(SAL)
+FROM EMP
+GROUP BY JOB
+
+UNION
+
+SELECT 'TOTAL',
+       SUM(SAL)
+FROM EMP;
+

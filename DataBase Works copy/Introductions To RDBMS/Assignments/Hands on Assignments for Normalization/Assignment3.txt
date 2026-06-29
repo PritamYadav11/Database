@@ -1,0 +1,36 @@
+
+Assignment 3
+
+Question :-
+Observe the structure of the given EMPLOYEE table and identify the problem.
+
+Table :-
+EMPLOYEE(EmpNo, Project_No, No_Of_Days, CustomerName)
+
+Composite Primary Key:- (EmpNo, Project_No)
+
+Answer:-
+
+The table violates Second Normal Form (2NF) because it contains a partial dependency.
+
+Reason :-
+
+* (EmpNo, Project_No) → No_Of_Days
+* Project_No → CustomerName
+
+Since CustomerName depends only on Project_No, which is part of the composite primary key, a partial dependency exists.
+
+Normalized Tables (2NF):-
+
+EMPLOYEE_PROJECT
+
+| EmpNo | Project_No | No_Of_Days |
+| ----- | ---------- | ---------- |
+
+PROJECT
+
+| Project_No | CustomerName |
+| ---------- | ------------ |
+
+Conclusion:
+The table can be converted into 2NF by moving the customer information into a separate PROJECT table.
